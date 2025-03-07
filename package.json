@@ -1,0 +1,40 @@
+{
+  "name": "copilot-terminal",
+  "version": "1.0.0",
+  "description": "A REPL terminal program that uses GitHub Copilot to suggest commands",
+  "main": "dist/index.js",
+  "bin": {
+    "copilot-terminal": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "copilot",
+    "cli",
+    "terminal",
+    "repl"
+  ],
+  "author": "Abdelhakim Wahab",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvoGroupTN/copilot-terminal-assistant.git"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.9",
+    "enquirer": "^2.4.1",
+    "inquirer": "^12.4.2",
+    "node-fetch": "^3.3.2",
+    "prompts": "^2.4.2",
+    "typescript": "^5.8.2",
+    "uuid": "^9.0.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "@types/uuid": "^9.0.8"
+  }
+}
